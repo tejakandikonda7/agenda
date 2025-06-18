@@ -155,6 +155,7 @@ export class JobDbRepository {
 		 */
 		const JOB_RETURN_QUERY: FindOneAndUpdateOptions = {
 			returnDocument: 'after',
+      includeResultMetadata: true,
 			sort: this.connectOptions.sort
 		};
 
